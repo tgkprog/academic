@@ -41,3 +41,5 @@ class Solution {
     }
 }
 ```
+
+Full code with [**test helpers**](https://github.com/tgkprog/academic/blob/master/src/main/java/leet/simple/RemoveValueInPlaceFromArray.java).
