@@ -1,1 +1,9 @@
 /bin/
+/build
+/output
+### IntelliJ IDEA ###
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+.idea/
+classes/

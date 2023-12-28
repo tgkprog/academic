@@ -1,3 +1,3 @@
-public enum Color{
-	RED, BLACK;
+public enum Color {
+    RED, BLACK;
 }
