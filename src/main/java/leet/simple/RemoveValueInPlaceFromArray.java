@@ -1,3 +1,5 @@
+package leet.simple;
+
 import java.util.*;
 
 class RemoveValueInPlaceFromArray {

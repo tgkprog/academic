@@ -1,29 +1,21 @@
-# academic
+# academic 
 
 https://leetcode.com/problems/remove-element/post-solution/?submissionId=1130607552
 
 # Intuition
-
-To have two loops, but then we only need the good part of the array so no need to keep the top part with excahnged
-values
+To have two loops, but then we only need the good part of the array so no need to keep the top part with excahnged values
 
 # Approach
-
 Iterate from top (end of array) to bottom
 
 # Complexity
-
 - Time complexity:
-  One pass so =O(n)?
+One pass so =O(n)?
 
 - Space complexity:
-  Create one int so its O(0)? Have a look at the code per leetcode it takes less than a millisecond, is very fast and
-  memory used is less than 40% of submissions. I keep track of good values only, the ending part of array has duplicates
-  but since question says we do not need to worry about that and its not counted so I let them be. So we do not need an
-  inner array. That works out very fast
+Create one int so its O(0)? Have a look at the code per leetcode it takes less than a millisecond, is very fast and memory used is less than 40% of submissions. I keep track of good values only, the ending part of array has duplicates but since question says we do not need to worry about that and its not counted so I let them be. So we do not need an inner array. That works out very fast
 
 # Code
-
 ```
 class Solution {
     public int removeElement(int[] nums, int val) {
