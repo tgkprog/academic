@@ -9,7 +9,9 @@
  */
 public class IcyHot {
 
-    private int index;
+    //count of test cases
+    private int count;
+    // test cases which has an error. Either due to bad expected data or wrong or incomplete implemnetation of target function
     private int errs;
 
     public static void main(String[] args) {
@@ -52,7 +54,7 @@ public class IcyHot {
      */
     void testIcyHot(int temp1, int temp2, boolean expected) {
         boolean actual = false;
-        index++;
+        count++;
         try {
             actual = icyHot(temp1, temp2);
         } catch (Throwable e) {
@@ -62,7 +64,7 @@ public class IcyHot {
 
         if (actual != expected) {
             System.out.println("Actual :" + actual + ", expected :" + expected + ", for temp1 :" + temp1 + ", temp2 :" + temp2
-                    + ", index :" + index + ".");
+                    + ", count :" + count + ".");
             errs++;
         }
     }
@@ -73,14 +75,14 @@ public class IcyHot {
      * Number of test cases depends on question and number & type of parameters in target.
      */
     private void icyHotTestCases() {
-        System.out.println("IcyHot ");
+        System.out.println("IcyHot test cases run at " + new java.util.Date() );
         testIcyHot(0, 0, false);
         testIcyHot(0, 101, false);
         testIcyHot(-1, 101, true);
         testIcyHot(500, -101, true);
         testIcyHot(0, 101, false);
         testIcyHot(-100, 1999, true);
-        System.out.println("Icy Hot index " + index + ", Errors :" + errs + ".");
+        System.out.println("Icy Hot test cases count " + count + ", Errors :" + errs + ".");
     }
 
 }
