@@ -24,8 +24,6 @@ public class IcyHot {
     /**
      * Target function, this function is the main function to implement. The signature should be same as
      * in your question.
-     * Can use online tool to test it. In your java file can have system out println but for online
-     * test might have to comment that out or wont run.
      * Following is simple question, real one will be a little more complex.
      * Remember :
      * copy this template but rename all functions and change parameters per your problem.
@@ -37,7 +35,6 @@ public class IcyHot {
      * icyHot(-1, 120) -> true
      * icyHot(2, 120) -> false
      * <p>
-     * For debug can have system out println here but in reference website need to comment out.
      */
     public boolean icyHot(int temp1, int temp2) {
         if (temp1 < 0 && temp2 > 100) return true;//sample answer, incomplete
