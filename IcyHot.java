@@ -1,12 +1,3 @@
-/**
- * Target function and, unit test cases that call test helper repeatedly
- * <p>
- * Run in command prompt:
- * cd c:\j
- * c:
- * javac c:\j\IcyHot.java
- * java IcyHot
- */
 public class IcyHot {
 
     //count of test cases
@@ -36,8 +27,8 @@ public class IcyHot {
      * icyHot(2, 120) -> false
      * <p>
      */
-    public boolean icyHot(int temp1, int temp2) {
-        if (temp1 < 0 && temp2 > 100) return true;//sample answer, incomplete
+    public boolean icyHot(int temperature1, int temperature2) {
+        if (temperature1 < 0 && temperature2 > 100) return true;//sample answer, incomplete
         return false;
     }
 
@@ -49,18 +40,18 @@ public class IcyHot {
      * expected value has to be accurately calculated by developer.
      * Type and number of parameters can change depending on your question.
      */
-    void testIcyHot(int temp1, int temp2, boolean expected) {
+    void testIcyHot(int temperature1, int temperature2, boolean expected) {
         boolean actual = false;
         count++;
         try {
-            actual = icyHot(temp1, temp2);
+            actual = icyHot(temperature1, temperature2);
         } catch (Throwable e) {
             e.printStackTrace();// log it
             System.err.println("Error " + e);
         }
 
         if (actual != expected) {
-            System.out.println("Actual :" + actual + ", expected :" + expected + ", for temp1 :" + temp1 + ", temp2 :" + temp2
+            System.out.println("Actual :" + actual + ", expected :" + expected + ", for temperature1 :" + temperature1 + ", temperature2 :" + temperature2
                     + ", count :" + count + ".");
             errs++;
         }
