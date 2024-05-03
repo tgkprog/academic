@@ -29,7 +29,6 @@ public class IcyHot {
      */
     public boolean icyHot(int temperature1, int temperature2) {
         return temperature1 < 0;//sample answer, incomplete
-        return false;
     }
 
 
