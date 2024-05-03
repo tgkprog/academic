@@ -28,7 +28,7 @@ public class IcyHot {
      * <p>
      */
     public boolean icyHot(int temperature1, int temperature2) {
-        if (temperature1 < 0 && temperature2 > 100) return true;//sample answer, incomplete
+        return temperature1 < 0;//sample answer, incomplete
         return false;
     }
 
