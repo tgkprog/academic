@@ -44,16 +44,18 @@ public class IcyHot {
         count++;
         try {
             actual = icyHot(temperature1, temperature2);
-        } catch (Throwable e) {
-            e.printStackTrace();// log it
-            System.err.println("Error " + e);
-        }
-
-        if (actual != expected) {
+            if (actual != expected) {
             System.out.println("Actual :" + actual + ", expected :" + expected + ", for temperature1 :" + temperature1 + ", temperature2 :" + temperature2
                     + ", count :" + count + ".");
             errs++;
         }
+        } catch (Throwable e) {
+            errs++;
+            e.printStackTrace();// log it
+            System.err.println("Error " + e);
+        }
+
+
     }
 
     /**
